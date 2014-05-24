@@ -1,10 +1,8 @@
-## CodeBook for tidy dataset
-
-## Row Space
+#CodeBook for tidy dataset
 
 There are a total of 180 rows. Each row corresponds to a unique combination of "SubjectID" and "Activity". Each value is the mean of each measurement for each subject and each activity.
 
-## Column Space
+## Variables - Columns of tidy dataset
 
 There are a total of 68 columns in the final uploaded tidy dataset:
 
@@ -83,3 +81,11 @@ fBodyBodyGyroMag-mean
 fBodyBodyGyroMag-std
 fBodyBodyGyroJerkMag-mean
 fBodyBodyGyroJerkMag-std
+
+## Cleaning step
+1. Merges the training and the test sets to create one data set.
+2. Extracts only the measurements on the mean and standard deviation (66 measurements selected) for each measurement. 
+3. Merged activity_labels.txt and Y dataset to label activities with descriptive activity names.
+4. Merged X dataset, Y dataset with subject dataset.
+5. Summarized the tidy data set with the average of each variable for each activity and each subject.
+
